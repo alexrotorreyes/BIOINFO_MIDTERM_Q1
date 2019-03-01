@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec7a06b0-1f5d-4723-a65b-37ec8d6bad8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/BIOINFO_MIDTERM_Q1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BIOINFO_MIDTERM_Q1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bioinfo_midterm_q1.py" beforeDir="false" afterPath="$PROJECT_DIR$/bioinfo_midterm_q1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,15 +11,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/BIOINFO_MIDTERM_Q1$bioinfo_midterm_q1.coverage" NAME="bioinfo_midterm_q1 Coverage Results" MODIFIED="1551452480421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BIOINFO_MIDTERM_Q1$bioinfo_midterm_q1.coverage" NAME="bioinfo_midterm_q1 Coverage Results" MODIFIED="1551452873698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bioinfo_midterm_q1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+            <state relative-caret-position="384">
+              <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+              <folding>
+                <element signature="e#20#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,12 +126,12 @@
       <workItem from="1551172223305" duration="794000" />
       <workItem from="1551323271042" duration="5553000" />
       <workItem from="1551431200910" duration="43000" />
-      <workItem from="1551451541482" duration="964000" />
+      <workItem from="1551451541482" duration="1336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7362000" />
+    <option name="totallyTimeSpent" value="7734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -166,8 +166,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bioinfo_midterm_q1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        <state relative-caret-position="384">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+          <folding>
+            <element signature="e#20#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

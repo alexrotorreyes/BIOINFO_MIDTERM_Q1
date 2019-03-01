@@ -1,4 +1,6 @@
 #BIOINFO MIDTERM Q1
+import numpy
+
 from Bio.Seq import Seq
 
 
@@ -27,12 +29,12 @@ matrix = [[1, -1, -1, -1], #a
 
 total = 0
 
-score = [[]]
+score = numpy.zeros(shape=(len(x), len(y)), dtype=int)
 
-for i in range(2):
-    for t in range(2):
-        print(score)
+for i in range(len(x)):
+    for t in range(len(y)):
         score[i][t] = 1
+        print(score, "\n")
 
 for i in range(len(x)):
     if(len(x)<len(y)):
