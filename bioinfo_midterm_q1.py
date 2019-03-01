@@ -27,6 +27,13 @@ matrix = [[1, -1, -1, -1], #a
 
 total = 0
 
+score = [[]]
+
+for i in range(2):
+    for t in range(2):
+        print(score)
+        score[i][t] = 1
+
 for i in range(len(x)):
     if(len(x)<len(y)):
         g = len(y)- len(x)
