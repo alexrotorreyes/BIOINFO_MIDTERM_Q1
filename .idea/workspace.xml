@@ -12,15 +12,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/BIOINFO_MIDTERM_Q1$bioinfo_midterm_q1.coverage" NAME="bioinfo_midterm_q1 Coverage Results" MODIFIED="1551503274684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BIOINFO_MIDTERM_Q1$bioinfo_midterm_q1.coverage" NAME="bioinfo_midterm_q1 Coverage Results" MODIFIED="1551538127679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bioinfo_midterm_q1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="221">
+              <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -31,20 +31,20 @@
     <findStrings>
       <find>i</find>
       <find>a</find>
-      <find>max</find>
       <find>m1</find>
       <find>h</find>
       <find>s</find>
       <find>d</find>
       <find>here</find>
+      <find>max</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>s-1</replace>
-      <replace>m1</replace>
       <replace>i</replace>
       <replace>j</replace>
       <replace>max</replace>
+      <replace>m1</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -58,9 +58,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -147,12 +147,13 @@
       <workItem from="1551492718552" duration="5580000" />
       <workItem from="1551498365824" duration="1662000" />
       <workItem from="1551500171652" duration="1930000" />
-      <workItem from="1551502699968" duration="597000" />
+      <workItem from="1551502699968" duration="774000" />
+      <workItem from="1551534233618" duration="3944000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25040000" />
+    <option name="totallyTimeSpent" value="29161000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -164,15 +165,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
+    <frame x="-7" y="0" width="782" height="831" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14563107" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14958449" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.54011464" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5393419" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -196,8 +197,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bioinfo_midterm_q1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="221">
+          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
         </state>
       </provider>
     </entry>

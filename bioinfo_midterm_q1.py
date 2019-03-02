@@ -27,7 +27,23 @@ matrix = [[1, -1, -1, -1], #a
           [-1, -1, 1, -1], #t
           [-1, -1, -1, 1]] #g
 
-def MaxScore (i, j, g):
+def getMax (m1, m2, m3):
+    max = m1
+    if(m2 > m1):
+        max = m2
+    if(m2 > m3):
+        if (m2 > max):
+            max = m2
+    if(m3 > m1):
+        if(m3 > max):
+            max = m3
+    if(m3 > m2):
+        if (m3 > max):
+            max = m3
+    return max
+
+def getScore (i, j, g):
+    m1 = 0
     m2 = 0
     m3 = 0
     max = 0
@@ -36,70 +52,63 @@ def MaxScore (i, j, g):
     m3 = scoreTable[i - 1][j] - g
     #a compared to all
     if (x[j-1] == 'a' and y[i-1] == 'a'):
-        max = scoreTable[i - 1][j - 1] + matrix[0][0]
+        m1 = scoreTable[i - 1][j - 1] + matrix[0][0]
         print("aa")
     elif (x[j-1] == 'a' and y[i-1] == 'c'):
-        max = scoreTable[i - 1][j - 1] + matrix[0][1]
+        m1 = scoreTable[i - 1][j - 1] + matrix[0][1]
         print("ac")
     elif (x[j-1] == 'a' and y[i-1] == 't'):
-        max = scoreTable[i - 1][j - 1] + matrix[0][2]
+        m1 = scoreTable[i - 1][j - 1] + matrix[0][2]
         print("at")
     elif (x[j-1] == 'a' and y[i-1] == 'g'):
-        max = scoreTable[i - 1][j - 1] + matrix[0][3]
+        m1 = scoreTable[i - 1][j - 1] + matrix[0][3]
         print("ag")
     #c paired to all
     elif (x[j-1] == 'c' and y[i-1] == 'a'):
-        max = scoreTable[i - 1][j - 1] + matrix[1][0]
+        m1 = scoreTable[i - 1][j - 1] + matrix[1][0]
         print("ca")
     elif (x[j-1] == 'c' and y[i-1] == 'c'):
-        max = scoreTable[i - 1][j - 1] + matrix[1][1]
+        m1 = scoreTable[i - 1][j - 1] + matrix[1][1]
         print("cc")
     elif (x[j-1] == 'c' and y[i-1] == 't'):
-        max = scoreTable[i - 1][j - 1] + matrix[1][2]
+        m1 = scoreTable[i - 1][j - 1] + matrix[1][2]
         print("ct")
     elif (x[j-1] == 'c' and y[i-1] == 'g'):
-        max = scoreTable[i - 1][j - 1] + matrix[1][3]
+        m1 = scoreTable[i - 1][j - 1] + matrix[1][3]
         print("cg")
     #t compared to all
     elif (x[j-1] == 't' and y[i-1] == 'a'):
-        max = scoreTable[i - 1][j - 1] + matrix[2][0]
+        m1 = scoreTable[i - 1][j - 1] + matrix[2][0]
         print("ta")
     elif (x[j-1] == 't' and y[i-1] == 'c'):
-        max = scoreTable[i - 1][j - 1] + matrix[2][1]
+        m1 = scoreTable[i - 1][j - 1] + matrix[2][1]
         print("tc")
     elif (x[j-1] == 't' and y[i-1] == 't'):
-        max = scoreTable[i - 1][j - 1] + matrix[2][2]
+        m1 = scoreTable[i - 1][j - 1] + matrix[2][2]
         print("tt")
     elif (x[j-1] == 't' and y[i-1] == 'g'):
         print("tg")
-        max = scoreTable[i - 1][j - 1] + matrix[2][3]
+        m1 = scoreTable[i - 1][j - 1] + matrix[2][3]
     #g compared to all
     elif (x[j-1] == 'g' and y[i-1] == 'a'):
-        max = scoreTable[i - 1][j - 1] + matrix[3][0]
+        m1 = scoreTable[i - 1][j - 1] + matrix[3][0]
         print("ga")
     elif (x[j-1] == 'g' and y[i-1] == 'c'):
-        max = scoreTable[i - 1][j - 1] + matrix[3][1]
+        m1 = scoreTable[i - 1][j - 1] + matrix[3][1]
         print("gc")
     elif (x[j-1] == 'g' and y[i-1] == 't'):
-        max = scoreTable[i - 1][j - 1] + matrix[3][2]
+        m1 = scoreTable[i - 1][j - 1] + matrix[3][2]
         print("gt")
     elif (x[j-1] == 'g' and y[i-1] == 'g'):
-        max = scoreTable[i - 1][j - 1] + matrix[3][3]
+        m1 = scoreTable[i - 1][j - 1] + matrix[3][3]
         print("gg")
 
-    if(m2 > m3):
-        if(m2 > max):
-            max = m2
-    elif(m3 > m2):
-        if(m3 > max):
-            max = m3
+    max = getMax(m1, m2, m3)
 
-    # if (i == 1 and j == 2):
+    # if ((i == 3 and j == 4) or (i == 9 and j == 6)):
     #     print(m2, m3, max)
     #     print("HERE")
     return max
-
-
 
 score = 0
 
@@ -118,7 +127,7 @@ for i in range(0, len(y)+1):
     for j in range(0, len(x)+1):
         #NOT A BASE CASE
         if(i != 0 and j != 0):
-            score = MaxScore(i, j, g)
+            score = getScore(i, j, g)
             scoreTable[i][j] = score
         #BASE CASE
         if(i == 0):
