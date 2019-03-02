@@ -11,11 +11,14 @@ max = Si-1, j-1 + M[X[i],Y[j]]
 '''
 
 #tacggtat
-x = ['t', 'a', 'c', 'g', 'g', 't', 'a', 't']
-
+f = open("string1.txt", "r")
+if f.mode == 'r':
+    x = (f.read())
 #ggacgtacg
-y = ['g', 'g', 'a', 'c', 'g', 't', 'a', 'c', 'g']
-
+f = open("string2.txt", "r")
+if f.mode == 'r':
+    y = (f.read())
+print(x, y)
 #gap = d
 
 #          a,  c,  t,  g
@@ -104,7 +107,6 @@ scoreTable = numpy.zeros(shape=(len(y)+1, len(x)+1), dtype=int)
 #            r  c
 # scoreTable[0][1] = 1
 
-print(scoreTable)
 if(len(x)<len(y)):
     g = len(y) - len(x)
 elif(len(y)< len(x)):
