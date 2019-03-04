@@ -48,8 +48,8 @@ def getScore (i, j, g):
     m3 = 0
     max = 0
     print(i-1, j-1)
-    m2 = scoreTable[i][j - 1] - g
-    m3 = scoreTable[i - 1][j] - g
+    m2 = scoreTable[i][j - 1] + g
+    m3 = scoreTable[i - 1][j] + g
     #a compared to all
     if (x[j-1] == 'a' and y[i-1] == 'a'):
         m1 = scoreTable[i - 1][j - 1] + matrix[0][0]
@@ -108,6 +108,8 @@ def getScore (i, j, g):
     # if ((i == 3 and j == 4) or (i == 9 and j == 6)):
     #     print(m2, m3, max)
     #     print("HERE")
+    print(i, j, g)
+    print(m1, m2, m3, max)
     return max
 
 score = 0
@@ -116,13 +118,13 @@ scoreTable = numpy.zeros(shape=(len(y)+1, len(x)+1), dtype=int)
 #            r  c
 # scoreTable[0][1] = 1
 
-if(len(x)<len(y)):
-    g = len(y) - len(x)
-elif(len(y)< len(x)):
-    g = len(x) - len(y)
+if(len(x)>len(y)):
+    g = 4 * (len(y) - len(x))
+elif(len(y)> len(x)):
+    g = 4 * (len(x) - len(y))
 elif(len(x) == len(y)):
     g = 0
-
+print(g)
 for i in range(0, len(y)+1):
     for j in range(0, len(x)+1):
         #NOT A BASE CASE
