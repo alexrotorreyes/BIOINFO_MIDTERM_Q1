@@ -21,11 +21,27 @@ if f.mode == 'r':
 print(x, y)
 #gap = d
 
-#          a,  c,  t,  g
-matrix = [[1, -1, -1, -1], #a
-          [-1, 1, -1, -1], #c
-          [-1, -1, 1, -1], #t
-          [-1, -1, -1, 1]] #g
+match = input("what score would you like for a match?")
+type(match)
+match = int(match)
+
+mismatch = input("What score would you like for a mismatch?")
+type(mismatch)
+mismatch = int(mismatch)
+
+gap = input("What gap penalty would you like?")
+type(gap)
+gap = int(gap)
+
+matrix = numpy.zeros(shape=(4, 4), dtype=int)
+for m in range(4):
+    for m1 in range(4):
+        if(m == m1):
+            matrix[m][m1] = match
+        if(m != m1):
+            matrix[m][m1] = mismatch
+
+print(matrix)
 
 def getMax (m1, m2, m3):
     max = m1
@@ -108,7 +124,8 @@ def getScore (i, j, g):
     # if ((i == 3 and j == 4) or (i == 9 and j == 6)):
     #     print(m2, m3, max)
     #     print("HERE")
-
+    print(i, j, g)
+    print(m1, m2, m3, max)
     return max
 
 score = 0
@@ -118,11 +135,12 @@ scoreTable = numpy.zeros(shape=(len(y)+1, len(x)+1), dtype=int)
 # scoreTable[0][1] = 1
 
 if(len(x)>len(y)):
-    g = (len(y) - len(x))
+    g = gap * (len(y) - len(x))
 elif(len(y)> len(x)):
-    g = (len(x) - len(y))
+    g = gap * (len(x) - len(y))
 elif(len(x) == len(y)):
     g = 0
+print(g)
 
 for i in range(0, len(y)+1):
     for j in range(0, len(x)+1):
